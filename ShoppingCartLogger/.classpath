@@ -6,6 +6,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.ajdt.core.ASPECTJRT_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/aspectj1.9/lib/aspectjrt.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

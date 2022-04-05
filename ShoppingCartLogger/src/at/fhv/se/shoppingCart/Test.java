@@ -5,7 +5,7 @@ import java.util.logging.Logger;
 
 public class Test {
 
-	static Logger _logger = Logger.getLogger("trace");
+	//static Logger _logger = Logger.getLogger("trace");
 	
 	public static void main(String [] args) {
 		//_logger.logp(Level.INFO, "Test", "main", "Entering");
