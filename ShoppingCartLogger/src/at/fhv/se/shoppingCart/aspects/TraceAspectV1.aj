@@ -1,4 +1,4 @@
-package at.fhv.se.shoppingCart;
+package at.fhv.se.shoppingCart.aspects;
 
 import org.aspectj.lang.Signature;
 

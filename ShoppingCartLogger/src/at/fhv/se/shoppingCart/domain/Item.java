@@ -1,4 +1,4 @@
-package at.fhv.se.shoppingCart;
+package at.fhv.se.shoppingCart.domain;
 
 import java.util.logging.*;
 

@@ -1,4 +1,4 @@
-package at.fhv.se.shoppingCart;
+package at.fhv.se.shoppingCart.domain;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -17,9 +17,12 @@ public class Inventory {
 		_items.add(item);
 	}
 	
-	public void removeItem(Item item) {
+	public void removeItem(Item item) throws ItemNotInStockException {
 		//_logger.logp(Level.INFO, "Inventory", "removeItem", "Entering");
-		_items.remove(item);
+		
+		if(!_items.remove(item)) {
+			throw new ItemNotInStockException(item);
+		}
 	}
 	
 	

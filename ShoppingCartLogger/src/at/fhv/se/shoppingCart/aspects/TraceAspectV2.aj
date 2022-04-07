@@ -1,4 +1,4 @@
-package at.fhv.se.shoppingCart;
+package at.fhv.se.shoppingCart.aspects;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
