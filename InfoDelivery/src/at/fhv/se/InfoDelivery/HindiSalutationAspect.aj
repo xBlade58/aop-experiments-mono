@@ -1,7 +1,7 @@
 package at.fhv.se.InfoDelivery;
 
 public aspect HindiSalutationAspect {
-
+	
 	pointcut sayToPerson(String person) : call(* MessageCommunicator.deliver(String, String))
 		&& args(person, String);
 	

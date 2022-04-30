@@ -4,11 +4,11 @@ import org.aspectj.lang.Signature;
 
 public aspect TraceAspectV1 {
 
-//	pointcut traceMethods(): // all methods in at.fhv.se.shoppingCart including in its subpackages
-//		(execution(* at.fhv.se.shoppingCart..*.*(..)) || execution(at.fhv.se.shoppingCart..*.new(..))) && !within(TraceAspectV1);
-//	
-//	before() : traceMethods() {
-//		Signature sig = thisJoinPoint.getStaticPart().getSignature();
-//		System.out.println("Entering [" + sig.getDeclaringType().getName() + "." + sig.getName() + "]");
-//	}
+	pointcut traceMethods(): // all methods in at.fhv.se.shoppingCart including in its subpackages
+		(execution(* at.fhv.se.shoppingCart..*.*(..)) || execution(at.fhv.se.shoppingCart..*.new(..))) && !within(TraceAspectV1);
+	
+	before() : traceMethods() {
+		Signature sig = thisJoinPoint.getStaticPart().getSignature();
+		System.out.println("Entering [" + sig.getDeclaringType().getName() + "." + sig.getName() + "]");
+	}
 }

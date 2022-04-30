@@ -10,3 +10,4 @@ public class MessageCommunicator {
 		System.out.println(person + ", " + message);
 	}
 }
+

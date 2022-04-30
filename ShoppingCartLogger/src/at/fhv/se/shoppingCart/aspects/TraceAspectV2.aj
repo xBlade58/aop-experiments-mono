@@ -7,6 +7,7 @@ import org.aspectj.lang.Signature;
 
 public aspect TraceAspectV2 {
 	
+	/*
 	private Logger _logger = Logger.getLogger("trace");
 	
 	TraceAspectV2() {
@@ -21,7 +22,7 @@ public aspect TraceAspectV2 {
 			Signature sig = thisJoinPoint.getStaticPart().getSignature();
 			_logger.logp(Level.INFO, sig.getDeclaringType().getName(), sig.getName(), "Entering");
 		}
-	}
+	}*/
 	
 	
 }

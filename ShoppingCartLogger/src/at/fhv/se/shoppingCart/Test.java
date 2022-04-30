@@ -9,24 +9,23 @@ import at.fhv.se.shoppingCart.domain.ShoppingCart;
 import at.fhv.se.shoppingCart.domain.ShoppingCartOperator;
 
 public class Test {
-
-	//static Logger _logger = Logger.getLogger("trace");
 	
 	public static void main(String [] args) {
-		//_logger.logp(Level.INFO, "Test", "main", "Entering");
+
 		Inventory inventory = new Inventory();
-		Item itemHose = new Item ("Hose", 20);
-		Item itemShirt = new Item("T-Shirt", 15);
-		Item itemBrille = new Item("Sonnenbrille", 7.99f);
-		Item aopBook = new Item("AspectJ-Book", 30);
+		Item trouses = new Item ("Trousers", 20);
+		Item shirt = new Item("T-Shirt", 15);
+		Item glasses = new Item("sun glasses", 7.99f);
+		Item book = new Item("AspectJ-Book", 30);
 		
-		inventory.addItem(itemShirt);
-		inventory.addItem(itemHose);
-		inventory.addItem(itemBrille);
+		inventory.addItem(trouses);
+		inventory.addItem(shirt);
+		inventory.addItem(glasses);
 		
 		ShoppingCart sc = new ShoppingCart();
-		ShoppingCartOperator.addShoppingCartItem(sc, inventory, itemBrille);
-		ShoppingCartOperator.addShoppingCartItem(sc, inventory, itemShirt);
-		ShoppingCartOperator.addShoppingCartItem(sc, inventory, aopBook); //add item which isn't in inventory
+		ShoppingCartOperator.addShoppingCartItem(sc, inventory, glasses);
+		ShoppingCartOperator.addShoppingCartItem(sc, inventory, shirt);
+		//ShoppingCartOperator.addShoppingCartItem(sc, inventory, aopBook); //add item which isn't in inventory
+		System.out.println("Program exited.");
 	}
 }

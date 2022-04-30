@@ -12,3 +12,4 @@ public aspect MannersAspect {
 		System.out.println("Yes!");
 	}
 }
+
