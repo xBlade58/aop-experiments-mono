@@ -13,19 +13,18 @@ public class Test {
 	public static void main(String [] args) {
 
 		Inventory inventory = new Inventory();
-		Item trouses = new Item ("Trousers", 20);
+		Item trousers = new Item ("Trousers", 20);
 		Item shirt = new Item("T-Shirt", 15);
 		Item glasses = new Item("sun glasses", 7.99f);
 		Item book = new Item("AspectJ-Book", 30);
 		
-		inventory.addItem(trouses);
+		inventory.addItem(trousers);
 		inventory.addItem(shirt);
 		inventory.addItem(glasses);
 		
 		ShoppingCart sc = new ShoppingCart();
 		ShoppingCartOperator.addShoppingCartItem(sc, inventory, glasses);
 		ShoppingCartOperator.addShoppingCartItem(sc, inventory, shirt);
-		//ShoppingCartOperator.addShoppingCartItem(sc, inventory, aopBook); //add item which isn't in inventory
-		System.out.println("Program exited.");
+		ShoppingCartOperator.addShoppingCartItem(sc, inventory, book); //add item which isn't in inventory
 	}
 }

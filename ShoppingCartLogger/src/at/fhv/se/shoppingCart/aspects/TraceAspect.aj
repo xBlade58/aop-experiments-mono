@@ -13,7 +13,6 @@ public aspect TraceAspect {
 //		execution(* *.*(..)) && !within(TraceAspect);
 //	
 //	before(): traceMethods(){
-//		System.out.println("------ CALLING ADVICE ------");
 //		Signature sig = thisJoinPoint.getStaticPart().getSignature();
 //		_logger.logp(Level.INFO, sig.getDeclaringType().getName(), sig.getName(), "Entering");
 //	}
