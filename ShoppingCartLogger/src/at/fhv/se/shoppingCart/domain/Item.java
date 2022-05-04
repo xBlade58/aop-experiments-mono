@@ -7,10 +7,10 @@ public class Item {
 	private String _id;
 	private float _price;
 	
-	public Item(String _id, float _price) {
+	public Item(String id, float price) {
 		super();
-		this._id = _id;
-		this._price = _price;
+		_id = id;
+		_price = price;
 	}
 
 	public String getId() {

@@ -10,12 +10,10 @@ public class ShoppingCart {
 	private List<Item> _items = new LinkedList<Item>();
 	
 	public void addItem(Item item ) {
-
 		_items.add(item);
 	}
 	
 	public void removeItem(Item item) {
-
 		_items.remove(item);
 	}
 	

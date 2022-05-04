@@ -5,6 +5,8 @@ import java.util.logging.Logger;
 
 import org.aspectj.lang.Signature;
 
+import at.fhv.se.shoppingCart.domain.ItemNotInStockException;
+
 public aspect ExceptionLoggerAspect {
 
 //	Logger _logger = Logger.getLogger("exceptions");
@@ -16,7 +18,7 @@ public aspect ExceptionLoggerAspect {
 //	pointcut exceptionLogMethods():
 //		call(* at.fhv.se.shoppingCart.domain.Inventory.*(..)) && !within(ExceptionLoggerAspect);
 //	
-//	after() throwing(Throwable ex) : exceptionLogMethods(){
+//	after() throwing(ItemNotInStockException ex) : exceptionLogMethods(){
 //		if(_logger.isLoggable(Level.WARNING)) {
 //			Signature sig = thisJoinPointStaticPart.getSignature();
 //			_logger.logp(Level.WARNING, sig.getDeclaringType().getName(), sig.getName(), "Exception logger aspect", ex);
